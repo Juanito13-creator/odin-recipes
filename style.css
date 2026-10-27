@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Qurova";
+  src: url("QurovaDEMO-Medium.otf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  background-color: #224402;
+  font-family: "Qurova", sans-serif;
+  color: #ece8c2;
+  padding: 30px;
+}
+
+.imagecss {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+div.recipeslist {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.recipes {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.recipes li {
+  background-color: #ece8c2;
+  padding: 30px;
+  border-radius: 20px;
+}
