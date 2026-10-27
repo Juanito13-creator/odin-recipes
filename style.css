@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Qurova";
-  src: url("QurovaDEMO-Medium.otf") format("truetype");
+  src: url("QurovaDEMO-Medium.otf") format("opentype");
   font-display: swap;
 }
 
@@ -11,49 +11,117 @@ body {
   padding: 30px;
 }
 
-.imagecss {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
 div.recipeslist {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.recipes {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
-}
-
-.recipes li {
-  background-color: #ddd26f;
-  padding: 30px;
-  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 a {
   color: #12571d;
+  text-decoration: none;
 }
 
 a.homelink {
   color: #ece8c2;
 }
 
-footer {
-  text-align: center;
-  margin-top: 100px;
-  color: #ece8c2;
+a.homelink:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 40px 0 10px;
+}
+
+h2 {
+  display: inline-block;
+  margin: 40px 0 16px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #ddd26f;
 }
 
 p.homedescription {
-  text-align: center;
   font-size: 1.2em;
   margin-bottom: 30px;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.recipes li {
+  background-color: #ddd26f;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.recipes a {
+  display: block;
+}
+
+.imagecss {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.recipes span {
+  display: block;
+  padding: 16px 20px;
+  font-size: 1.2em;
+}
+
+.recipeimage {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 20px 24px;
+  background-color: #ddd26f;
+  color: #132701;
+  border-radius: 16px;
+  columns: 2;
+  column-gap: 30px;
+}
+
+.ingredients li {
+  margin-bottom: 8px;
+}
+
+
+.steps {
+  list-style-type: upper-roman;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.steps li {
+  padding-left: 10px;
+  margin-bottom: 14px;
+}
+
+.steps li::marker {
+  color: #ddd26f;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(236, 232, 194, 0.3);
+  text-align: center;
+  color: #ece8c2;
 }
