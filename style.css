@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #224402;
+  background-color: #132701;
   font-family: "Qurova", sans-serif;
   color: #ece8c2;
   padding: 30px;
@@ -33,7 +33,27 @@ div.recipeslist {
 }
 
 .recipes li {
-  background-color: #ece8c2;
+  background-color: #ddd26f;
   padding: 30px;
   border-radius: 20px;
+}
+
+a {
+  color: #12571d;
+}
+
+a.homelink {
+  color: #ece8c2;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  color: #ece8c2;
+}
+
+p.homedescription {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
